@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Room;
+use App\Models\Booking;
 use App\Models\Comment;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -14,7 +16,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Comment::factory(10)->create();
+        Booking::factory(10)->create();
+        // Room::factory(10)->create();
+        //  Comment::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
